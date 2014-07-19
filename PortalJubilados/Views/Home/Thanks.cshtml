@@ -1,0 +1,28 @@
+﻿@model PortalJubilados.Models.GuestResponse
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Thanks</title>
+</head>
+<body>
+    <div>
+        <h1> Hola, @Model.Name</h1>
+        @if (Model.WillAttend == true)
+        {
+            @:Chachi que vengas
+        }
+        else
+        {
+            @:Menudo maricas estás hecho.
+        }
+        
+    </div>
+</body>
+</html>
